@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import './Field.scss';
 
 
@@ -73,6 +75,18 @@ class Field extends Component {
   render() {
     return this.props.type === 'checkbox' ? this.checkboxField() : this.inputField();
   }
+}
+
+Field.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  type: PropTypes.string.isRequired,
+  value: PropTypes.any.isRequired,
+  invalidFeedback: PropTypes.string,
+  name: PropTypes.string.isRequired
+};
+
+Field.defaultProps = {
+  invalidFeedback: ''
 }
 
 export default Field;

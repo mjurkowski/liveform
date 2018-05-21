@@ -1,0 +1,12 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "react/require-default-props": [2, { "forbidDefaultForRequired": true }],
+    "react/prop-types": [
+      2,
+      {
+        "ignore": ["className", "children"]
+      }
+    ]
+  }
+}

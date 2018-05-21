@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import Field from './Field/Field';
 import FormFields from './fields-list';
@@ -65,6 +66,10 @@ class LoginForm extends Component {
       </form> 
     );
   }
+}
+
+LoginForm.propTypes = {
+  onSuccess: PropTypes.func.isRequired
 }
 
 export default LoginForm;
