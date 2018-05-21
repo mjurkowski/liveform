@@ -1,0 +1,9 @@
+$color-primary: #6200ff;
+$color-primary-hover: darken($color-primary, 5%);
+
+@keyframes callbackIcon {
+  0% { transform: scale(0); }
+  25% { transform: scale(1.5); }
+  50% { transform: scale(0.7); }
+  100% { transform: scale(1); }
+}

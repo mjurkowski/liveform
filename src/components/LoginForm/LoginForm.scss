@@ -1,0 +1,42 @@
+@import '../../assets/scss/variables';
+
+.LoginForm {
+
+  fieldset {
+    border: 0;
+  }
+
+  .feedback {
+    font-size: 1.2rem;
+    color: $color-primary;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  .formName {
+    border-left: 6px solid $color-primary;
+    padding-left: 3rem;
+    margin-left: -3rem;
+    margin-bottom: 3rem;
+    color: $color-primary;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .SubmitButton {
+    background-color: $color-primary;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+  }
+}
