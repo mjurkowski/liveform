@@ -1,6 +1,6 @@
 ## DEMO
 
-https://mjurkowski.github.io/liveform/docs/
+https://mjurkowski.github.io/liveform/
 
 
 ## Available Scripts
