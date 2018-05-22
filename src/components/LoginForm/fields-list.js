@@ -5,7 +5,7 @@ const FormFields = [
     default: '',
     invalidFeedback: 'invalid email',
     placeholder: 'E-mail',
-    validation: (val) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)
+    validation: (val) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val) && !(/^(?=.*[$&+,:;=?#|'<>-^*()%!])$/.test(val))
   },
   {
     name: 'password',

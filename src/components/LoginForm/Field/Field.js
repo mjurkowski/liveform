@@ -78,15 +78,18 @@ class Field extends Component {
 }
 
 Field.propTypes = {
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
   type: PropTypes.string.isRequired,
-  value: PropTypes.any.isRequired,
+  value: PropTypes.any,
   invalidFeedback: PropTypes.string,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string
 };
 
 Field.defaultProps = {
-  invalidFeedback: ''
+  invalidFeedback: '',
+  onChange: () => {},
+  value: '',
+  name: ''
 }
 
 export default Field;
